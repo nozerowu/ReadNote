@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chapter030104</title>
+    <script src="/Scripts/vue.min.js?vison=1.0.25"></script>
+</head>
+<body >
+    <div id="example">
+        <input v-model="msg" debounce="5000"/>
+        <br />
+        {{  msg }}
+    </div>
+</body>
+<script>
+    var exampleVM2 = new Vue(
+    {
+        el: '#example',
+        data: {
+            msg:'内容是在5000ms后才改变的'
+        }
+    });
+</script>
+</html>

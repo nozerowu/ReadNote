@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chapter030103</title>
+    <script src="~/Scripts/vue.min.js"></script>
+</head>
+<body>
+    <div id="example">
+        <p v-if="ok">我是对的</p>
+        <p v-else="ok">我是错的</p>
+    </div>
+
+</body>
+<script>
+    var exampleVM2 = new Vue(
+    {
+        el: '#example',
+        data: {
+            ok: false
+        }
+    });
+</script>
+</html>

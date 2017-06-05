@@ -32,3 +32,28 @@ vue.js允许在表达式后添加过滤器(本质是一个函数)
 vue.js中的数据绑定的语法被设计为可配置的。如果不习惯Mustache风格的语法，则可以自己设置。
 可以在vue.config中配置绑定的语法。
 vue.config是一个对象，包含了所有vue的所有全局配置，可以在vue实例化前修改其中的属性。
+
+## 指令
+
+### 内部指令
+1. v-show
+1. v-else
+1. v-model
+1. v-repeat
+1. v-for
+1. v-text
+1. v-el
+1. v-html
+1. v-on
+1. v-bind
+1. v-ref
+1. v-pre
+1. v-cloak
+1. v-if
+
+#### v-if
+根据表达式的值在DOM中生成或移除一个元素，如果复制为false,那么对应的元素就会从DOM中移除，否则，对应元素的一个克隆将重新插入DOM中
+
+#### v-show
+根据表达式的值来显示或隐藏HTML元素，当为false，元素上多了一个内联样式style='display:none'
+>>v-show不支持<template>语法

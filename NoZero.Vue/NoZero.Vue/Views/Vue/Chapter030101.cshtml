@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chapter030101</title>
+    <script src="~/Scripts/vue.min.js"></script>
+</head>
+<body>
+<div id="example">
+    <p v-if="greeting">Hello</p>
+</div>
+<template v-if="ok">
+    <h1>Title</h1>
+    <p>Paragraph 1</p>
+    <p>paragraph 2</p>
+</template>
+</body>
+<script>
+    var exampleVM2 = new Vue(
+    {
+        el: '#example',
+        data: {
+            greeting: false
+        }
+    });
+</script>
+</html>

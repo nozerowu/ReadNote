@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -140,6 +141,8 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
+    <Content Include="Scripts\vue2.js" />
+    <Content Include="Scripts\vue.min.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -157,6 +160,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Vue\Index.cshtml" />
+    <Content Include="Views\Vue\Chapter030101.cshtml" />
+    <Content Include="Views\Vue\Chapter030103.cshtml" />
+    <Content Include="Views\Vue\Chapter030104.cshtml" />
+    <Content Include="Views\Vue\Chapter0301041.cshtml" />
+    <Content Include="Scripts\vue.min.js.map" />
+    <Content Include="Views\Vue\Chapter030105.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
