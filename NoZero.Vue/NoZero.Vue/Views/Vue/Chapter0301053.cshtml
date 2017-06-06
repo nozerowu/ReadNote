@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chapter030104</title>
+    <script src="/Scripts/vue.js?vison=1.0.25   "></script>
+
+</head>
+<body id="example">
+<div v-bind="{id:someProp,'OTHERAttr':otherProp}"></div>
+    @*停止冒泡*@
+<button @@click.stop="doThis"></button>
+    @*阻止默认行为*@
+<button @@click.prevent="doThis"></button>
+    @*阻止默认行为，没有表达式*@
+<form @@submit.prevent></form>
+    @*串联修饰符*@
+<button @@click.stop.prevent="doThis">stop</button>
+    @*键修饰符，键别名*@
+<input @@keyup.enter="onEnter"/>
+    @*键修饰符，键代码*@
+<input @@keyup.13="onEnter"/>
+
+<span v-el:msg>hello</span>
+<span v-el:other-msg>world</span>
+</body>
+<script>
+    var demo = new Vue(
+    {
+        el: '#example',
+        data: {
+            someProp: 'idName',
+            otherProp: 'prop'
+        }
+    });
+    //this.$els.msg.textContent
+    //this.$els.otherMsg.textContent
+</script>
+</html>

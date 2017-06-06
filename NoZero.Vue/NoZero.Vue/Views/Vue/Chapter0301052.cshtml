@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Chapter030104</title>
+    <script src="/Scripts/vue.min.js?vison=1.0.25"></script>
+</head>
+<body id="example">
+<ul id="repeat-object">
+    <li v-for="value in primitiveValues">{{$key}} : {{value}}</li>
+    <li>===</li>
+    <li v-for="(key,item) in objectValues">{{key}} : {{item.msg}}</li>
+    <li>===</li>
+    <li v-for="n in 10">Hi!{{$index}}</li>
+
+</ul>
+    <div v-html="html"></div>
+    <div>{{html}}</div>
+</body>
+<script>
+    var demo= new Vue(
+    {
+        el: '#repeat-object',
+        data: {
+            primitiveValues: {
+                FirstName: 'DIDI',
+                LastName: 'FE',
+                Age:4
+            },
+            objectValues: {
+                one: {
+                    msg:'Hello'
+                },
+                two: {
+                    msg:'DIDI FE'
+                }
+            } ,
+            html: "html5aksaklsjdk"
+        }
+    });
+</script>
+</html>

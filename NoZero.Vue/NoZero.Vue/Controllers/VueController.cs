@@ -36,5 +36,25 @@ namespace NoZero.Vue.Controllers
         {
             return View();
         }
+
+        public ActionResult Chapter0301051()
+        {
+            return View();
+        }
+
+        public ActionResult Chapter0301052()
+        {
+            return View();
+        }
+
+        public ActionResult Chapter0301053()
+        {
+            return View();
+        }
+
+        public ActionResult Chapter030201()
+        {
+            return View();
+        }
     }
 }

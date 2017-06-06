@@ -166,6 +166,10 @@
     <Content Include="Views\Vue\Chapter0301041.cshtml" />
     <Content Include="Scripts\vue.min.js.map" />
     <Content Include="Views\Vue\Chapter030105.cshtml" />
+    <Content Include="Views\Vue\Chapter0301051.cshtml" />
+    <Content Include="Views\Vue\Chapter0301052.cshtml" />
+    <Content Include="Views\Vue\Chapter0301053.cshtml" />
+    <Content Include="Views\Vue\Chapter030201.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

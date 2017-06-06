@@ -11,11 +11,9 @@
     <script src="/Scripts/vue.min.js?vison=1.0.25"></script>
 </head>
 <body id="example">
-<ul id="demo">
-    <li v-for="item in items" class="item-{{$index}}">
-        {{$index}}-{{parentMessage}} {{item.msg}}
-    </li>
-</ul>
+<my-item v-for="item in items" :item="item" :index="$index">
+    <p>{{item.msg }}</p>
+</my-item>
 </body>
 <script>
     var demo= new Vue(
@@ -23,7 +21,7 @@
         el: '#demo',
         data: {
             parentMessage: '滴滴',
-            items: [           
+            items: [
         {msg:'滴滴顺风车'},
         {msg:'滴滴专车'}
             ]
